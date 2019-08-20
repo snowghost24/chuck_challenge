@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  margin-top: 2vh
+}
+
+.App-logo{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+ul {
+  list-style-type:none;
+}
+
+.joke-li {
+  padding: 10px 0px;
+  margin: 5px;
+}
+
+.joke-li:hover {
+  color:red;
+}
+
+
