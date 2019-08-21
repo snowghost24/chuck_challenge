@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { deleteJoke } from '../action/jokesActions';
+import { deleteJoke } from '../redux/action/jokesActions';
 import SingleJoke from '../components/SingleJoke';
 
 class JokesList extends Component {
