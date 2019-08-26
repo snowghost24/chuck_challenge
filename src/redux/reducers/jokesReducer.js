@@ -20,7 +20,7 @@ export default function (state = initialState, action) {
   }
 }
 
-function limitJokesToTen(payload) {
+const limitJokesToTen = payload => {
   let arr = []
   // this loop ensures that all the random numbers are unique
   while (arr.length < 10) {
@@ -30,7 +30,7 @@ function limitJokesToTen(payload) {
   return arr.map(x => payload[x])
 }
 
-function deleteSingleJoke(state, payload) {
+const deleteSingleJoke = (state, payload) => {
   return [...state.jokesList].filter(joke => joke.id !== payload)
 }
 

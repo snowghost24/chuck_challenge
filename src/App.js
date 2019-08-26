@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
-import limelightlg from './limelight.gif'
+import limelightlg from './assets/images/limelight.gif'
 import './App.css';
 import FetchJokesButton from './components/FetchJokesButton';
-import JokeList from './components/JokeList';
+import JokeList from './components/JokeList/JokeList';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      displayLogo: true
-    }
+  state = {
+    displayLogo: true
   }
-
+  
   componentDidMount() {
-    // sets displayLogo to false after 3  secons 
+    // sets displayLogo to false after 3  seconds
     setTimeout(() => this.setState({ displayLogo: false }), 3000);
   }
 
@@ -38,3 +35,4 @@ class App extends Component {
 }
 
 export default App;
+

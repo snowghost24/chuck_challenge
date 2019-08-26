@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function SingleJoke({ deleteJoke, joke }) {
+export default function SingleJoke({deleteJokeClick, joke }) {
   return (
-    <li className='joke-li' onClick={() => deleteJoke(joke)}>
+    <li className='joke-li' onClick={deleteJokeClick}>
       {joke.joke}
     </li>
   )
@@ -11,7 +11,7 @@ export default function SingleJoke({ deleteJoke, joke }) {
 
 SingleJoke.propTypes = {
   joke: PropTypes.object.isRequired,
-  deleteJoke: PropTypes.func.isRequired,
+  deleteJokeClick: PropTypes.func.isRequired,
 };
 
 
